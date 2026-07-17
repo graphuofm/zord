@@ -1,0 +1,7 @@
+D,M,N,bal_count,bal_featmem,cut,dataset,featcomm_mb,method,part_s,status
+8,21111007,1939743,1.0,1.0,18471227,ogbn-mag,2371.1,hash,0.01,OK
+8,21111007,1939743,1.0,1.198,4483729,ogbn-mag,1007.5,metis-blind,14.51,OK
+8,21111007,1939743,1.639,1.005,4648740,ogbn-mag,1054.6,metis-aware,13.24,OK
+8,21111007,1939743,1.03,1.311,6627671,ogbn-mag,1177.8,zord-ml-blind,25.87,OK
+8,21111007,1939743,2.48,1.03,6236746,ogbn-mag,1233.7,zord-ml-aware,21.8,OK
+8,21111007,1939743,1.051,1.108,15039774,ogbn-mag,2227.1,zord-stream-mem,0.79,OK

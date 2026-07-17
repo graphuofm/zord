@@ -1,0 +1,9 @@
+D,F,auc,auc_diff,dataset,epoch_ms,final_loss,layers,loss_dev,method,partition_s,peak_mb_max,ref_auc,ref_epoch_ms,same,status
+2,128,0.612371,2e-08,jodie-wikipedia,6.21,0.719263,2,1.649e-07,metis-aware,0.13,123.3,0.612371,3.17,True,OK
+2,128,0.612371,1e-07,jodie-wikipedia,6.16,0.719263,2,1.608e-07,zord-polish,0.08,123.4,0.612371,3.21,True,OK
+8,128,0.612371,1e-07,jodie-wikipedia,30.99,0.719263,2,2.412e-07,metis-aware,0.05,51.9,0.612371,3.17,True,OK
+8,128,0.612371,2e-08,jodie-wikipedia,32.96,0.719263,2,2.241e-07,zord-polish,0.13,40.7,0.612371,3.22,True,OK
+2,128,0.485334,0.0,wiki-talk,319.99,0.748291,2,2.397e-07,metis-aware,3.4,8447.3,0.485334,231.17,True,OK
+2,128,0.485334,1e-08,wiki-talk,330.38,0.748291,2,2.397e-07,zord-polish,4.88,6397.5,0.485334,235.32,True,OK
+8,128,0.485334,1e-08,wiki-talk,488.75,0.748291,2,2.962e-07,metis-aware,5.26,4048.1,0.485334,236.29,True,OK
+8,128,0.485334,0.0,wiki-talk,477.6,0.748291,2,2.962e-07,zord-polish,7.54,1843.2,0.485334,236.73,True,OK

@@ -1,0 +1,9 @@
+dataset,gpu,ngpu,method,feat_dim,N,M,part_s,step_ms,peak_mb_max,halo_rows,exchange_ms,compute_ms,maxdiff,same_result,xmode,status,note
+wiki-talk,NVIDIA RTX 6000 Ada Generation,2,metis-aware,256,1140149,7833140,3.7,133.99,6728.3,0,,,1.1471176031849491e-07,True,,OK,TRAIN fwd+bwd+SGD, 10 steps; maxdiff = max relative loss deviation
+wiki-talk,NVIDIA RTX 6000 Ada Generation,2,zord-polish,256,1140149,7833140,5.09,148.93,7277.7,0,,,1.1472614467724036e-07,True,,OK,TRAIN fwd+bwd+SGD, 10 steps; maxdiff = max relative loss deviation
+wiki-talk,NVIDIA RTX 6000 Ada Generation,8,metis-aware,256,1140149,7833140,5.7,168.85,2525.5,0,,,1.1472902724699669e-07,True,,OK,TRAIN fwd+bwd+SGD, 10 steps; maxdiff = max relative loss deviation
+wiki-talk,NVIDIA RTX 6000 Ada Generation,8,zord-polish,256,1140149,7833140,7.37,145.95,1945.3,0,,,1.1472614467724036e-07,True,,OK,TRAIN fwd+bwd+SGD, 10 steps; maxdiff = max relative loss deviation
+stackoverflow,NVIDIA RTX 6000 Ada Generation,2,metis-aware,256,2601977,63497050,34.1,366.64,16266.7,0,,,1.1588309991000518e-07,True,,OK,TRAIN fwd+bwd+SGD, 10 steps; maxdiff = max relative loss deviation
+stackoverflow,NVIDIA RTX 6000 Ada Generation,2,zord-polish,256,2601977,63497050,46.01,365.02,16050.6,0,,,1.1587770174655507e-07,True,,OK,TRAIN fwd+bwd+SGD, 10 steps; maxdiff = max relative loss deviation
+stackoverflow,NVIDIA RTX 6000 Ada Generation,8,metis-aware,256,2601977,63497050,52.09,646.66,6209.7,0,,,1.1588489940958961e-07,True,,OK,TRAIN fwd+bwd+SGD, 10 steps; maxdiff = max relative loss deviation
+stackoverflow,NVIDIA RTX 6000 Ada Generation,8,zord-polish,256,2601977,63497050,70.15,664.17,5608.9,0,,,1.1588489940958961e-07,True,,OK,TRAIN fwd+bwd+SGD, 10 steps; maxdiff = max relative loss deviation

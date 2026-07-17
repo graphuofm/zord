@@ -1,0 +1,3 @@
+dataset,gpu,ngpu,method,feat_dim,N,M,part_s,step_ms,peak_mb_max,halo_rows,maxdiff,same_result,status,note
+stackoverflow,NVIDIA RTX 6000 Ada Generation,4,tensor-split,1024,2601977,63497050,0.0,112.58,9168.1,0,2.384185791015625e-06,True,OK,
+stackoverflow,NVIDIA RTX 6000 Ada Generation,8,tensor-split,1024,2601977,63497050,0.0,81.76,5356.6,0,None,None,OK,single-GPU reference OOM (tensor-split itself ran)

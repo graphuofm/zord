@@ -1,0 +1,6 @@
+dataset,gpu,ngpu,method,feat_dim,N,M,part_s,step_ms,peak_mb_max,halo_rows,maxdiff,same_result,status,note
+rmat-100M,NVIDIA RTX 6000 Ada Generation,8,hash,256,33554432,100000000,80.37,3036.84,23309.3,24510467,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+rmat-100M,NVIDIA RTX 6000 Ada Generation,8,zord-mc-aware,256,33554432,100000000,174.16,1169.55,22730.6,10930018,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+rmat-100M,NVIDIA RTX 6000 Ada Generation,8,zord-stream-mem,256,33554432,100000000,17.6,2177.3,20244.5,15293209,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+rmat-100M,NVIDIA RTX 6000 Ada Generation,8,zord-polish,256,33554432,100000000,101.57,2090.06,20709.8,13966496,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+rmat-100M,,,,,,,,,,,,,TIMEOUT,>7200s

@@ -1,0 +1,4 @@
+dataset,gpu,ngpu,method,feat_dim,N,M,part_s,step_ms,peak_mb_max,halo_rows,maxdiff,same_result,status,note
+stackoverflow,NVIDIA RTX 6000 Ada Generation,2,zord-stream-mem,256,2601977,63497050,2.43,159.08,6481.8,1235890,3.159046173095703e-06,True,OK,
+stackoverflow,NVIDIA RTX 6000 Ada Generation,4,zord-stream-mem,256,2601977,63497050,2.52,278.76,3980.0,3271322,3.2186508178710938e-06,True,OK,
+stackoverflow,NVIDIA RTX 6000 Ada Generation,8,zord-stream-mem,256,2601977,63497050,2.78,552.67,2218.2,5333638,3.2186508178710938e-06,True,OK,

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zord"
+version = "0.0.1"
+description = "ZORD: a heterogeneity-aware, batch partition-and-place engine + runtime for dynamic (snapshot) temporal-graph training on real heterogeneous GPU clusters."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Anonymous Authors", email = "anonymous@example.com" }]
+keywords = ["temporal graph", "graph partitioning", "GNN", "heterogeneous GPU", "distributed training"]
+dependencies = [
+  "numpy>=1.21",
+]
+
+[project.optional-dependencies]
+# heavier deps are optional so the core (datasets/cost-model) installs anywhere
+torch = ["torch>=2.0"]
+tgb = ["py-tgb"]
+full = ["torch>=2.0", "py-tgb", "pandas", "scipy"]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+zord = "zord.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+zord = ["py.typed"]

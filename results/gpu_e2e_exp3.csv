@@ -1,0 +1,5 @@
+dataset,gpu,ngpu,method,feat_dim,N,M,part_s,step_ms,peak_mb_max,halo_rows,maxdiff,same_result,status,note
+wiki-talk,NVIDIA RTX 6000 Ada Generation,4,tensor-split,256,1140149,7833140,0.0,6.17,1041.4,0,4.649162292480469e-06,True,OK,
+wiki-talk,NVIDIA RTX 6000 Ada Generation,8,tensor-split,256,1140149,7833140,0.0,4.05,626.4,0,1.615285873413086e-05,True,OK,
+stackoverflow,NVIDIA RTX 6000 Ada Generation,4,tensor-split,256,2601977,63497050,0.0,24.04,3453.1,0,2.2649765014648438e-06,True,OK,
+stackoverflow,NVIDIA RTX 6000 Ada Generation,8,tensor-split,256,2601977,63497050,0.0,17.11,2499.1,0,1.6689300537109375e-06,True,OK,

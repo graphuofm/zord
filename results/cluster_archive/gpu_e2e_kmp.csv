@@ -1,0 +1,4 @@
+dataset,gpu,ngpu,method,feat_dim,N,M,part_s,step_ms,peak_mb_max,halo_rows,exchange_ms,compute_ms,maxdiff,same_result,xmode,status,note
+wiki-talk,,,,,,,,,,,,,,,,TIMEOUT,>2400s
+stackoverflow,NVIDIA RTX 6000 Ada Generation,8,metis-aware,256,2601977,63497050,130.77,155.07,2390.7,4480250,162.05,21.2,2.7418136596679688e-06,True,direct,OK,
+stackoverflow,NVIDIA RTX 6000 Ada Generation,8,zord-polish,256,2601977,63497050,75.58,140.44,2106.7,4429582,129.68,12.04,2.7418136596679688e-06,True,direct,OK,

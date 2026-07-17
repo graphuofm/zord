@@ -1,0 +1,14 @@
+dataset,gpu,ngpu,method,feat_dim,N,M,part_s,step_ms,peak_mb_max,halo_rows,maxdiff,same_result,status,note
+stackoverflow,NVIDIA RTX 5000 Ada Generation,1,single,1024,2601977,63497050,0.02,,,,,,OOM,CUDA out of memory. Tried to allocate 9.93 GiB. GPU 0 has a total capacity of 31.50 GiB of which 9.8
+stackoverflow,NVIDIA RTX 5000 Ada Generation,4,hash,1024,2601977,63497050,0.01,1783.61,15410.0,4932466,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+stackoverflow,NVIDIA RTX 5000 Ada Generation,4,metis-aware,1024,2601977,63497050,43.3,1047.51,13257.6,2574855,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+stackoverflow,NVIDIA RTX 5000 Ada Generation,4,zord-mc-aware,1024,2601977,63497050,45.93,1252.18,15215.5,3045555,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+stackoverflow,NVIDIA RTX 5000 Ada Generation,4,zord-stream-aware,1024,2601977,63497050,2.15,1496.58,18476.2,3027022,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+stackoverflow,NVIDIA RTX 5000 Ada Generation,4,zord-stream-mem,1024,2601977,63497050,2.51,1461.18,15587.3,3284396,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+stackoverflow,NVIDIA RTX 5000 Ada Generation,4,tensor-split,1024,2601977,63497050,0.0,,,,,,OOM,CUDA out of memory. Tried to allocate 9.93 GiB. GPU 0 has a total capacity of 31.50 GiB of which 9.7
+stackoverflow,NVIDIA RTX 5000 Ada Generation,8,hash,1024,2601977,63497050,0.01,3609.68,9528.6,8470968,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+stackoverflow,NVIDIA RTX 5000 Ada Generation,8,metis-aware,1024,2601977,63497050,52.03,1967.69,8152.9,4480250,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+stackoverflow,NVIDIA RTX 5000 Ada Generation,8,zord-mc-aware,1024,2601977,63497050,53.61,2413.34,10661.3,4856375,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+stackoverflow,NVIDIA RTX 5000 Ada Generation,8,zord-stream-aware,1024,2601977,63497050,2.37,2400.24,13904.1,4413823,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+stackoverflow,NVIDIA RTX 5000 Ada Generation,8,zord-stream-mem,1024,2601977,63497050,2.74,2473.88,9941.7,5146130,None,None,OK,single-GPU reference OOM (the frontier: multi-GPU runs, 1-GPU cannot)
+stackoverflow,NVIDIA RTX 5000 Ada Generation,8,tensor-split,1024,2601977,63497050,0.0,,,,,,OOM,CUDA out of memory. Tried to allocate 9.93 GiB. GPU 0 has a total capacity of 31.50 GiB of which 9.7

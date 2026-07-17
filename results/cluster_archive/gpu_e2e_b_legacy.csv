@@ -1,0 +1,9 @@
+dataset,gpu,ngpu,method,feat_dim,N,M,part_s,step_ms,peak_mb_max,halo_rows,exchange_ms,compute_ms,maxdiff,same_result,xmode,status,note
+wiki-talk,NVIDIA RTX 6000 Ada Generation,2,metis-aware,256,1140149,7833140,3.69,51.9,2803.8,430693,43.57,15.59,3.7550926208496094e-06,True,legacy,OK,
+wiki-talk,NVIDIA RTX 6000 Ada Generation,2,zord-polish,256,1140149,7833140,4.99,55.26,2755.4,476781,43.99,11.36,1.233816146850586e-05,True,legacy,OK,
+wiki-talk,NVIDIA RTX 6000 Ada Generation,8,metis-aware,256,1140149,7833140,5.63,83.98,971.7,914284,95.38,7.65,8.106231689453125e-06,True,legacy,OK,
+wiki-talk,NVIDIA RTX 6000 Ada Generation,8,zord-polish,256,1140149,7833140,7.3,87.83,787.0,999645,86.94,3.91,6.198883056640625e-06,True,legacy,OK,
+stackoverflow,NVIDIA RTX 6000 Ada Generation,2,metis-aware,256,2601977,63497050,33.75,149.2,6420.1,1128145,107.86,49.54,2.5033950805664062e-06,True,legacy,OK,
+stackoverflow,NVIDIA RTX 6000 Ada Generation,2,zord-polish,256,2601977,63497050,45.01,144.93,6406.9,1067689,98.74,46.5,3.159046173095703e-06,True,legacy,OK,
+stackoverflow,NVIDIA RTX 6000 Ada Generation,8,metis-aware,256,2601977,63497050,51.21,490.15,2260.2,4480250,484.72,17.83,2.473592758178711e-06,True,legacy,OK,
+stackoverflow,NVIDIA RTX 6000 Ada Generation,8,zord-polish,256,2601977,63497050,69.88,468.05,2072.7,4429582,458.0,11.98,3.2186508178710938e-06,True,legacy,OK,

@@ -1,0 +1,13 @@
+{
+  "measured_date": "2026-05-30",
+  "source": "scripts/profile_hetcluster.sh; SLURM jobs 78668-78671 on partition bigTiger",
+  "method": "fp32 8192x8192 matmul (throughput) + pinned 256MB H2D/D2H copies (bandwidth), torch 2.5.1+cu124",
+  "key_finding": "fp32 compute is nearly FLAT across tiers (0.90x-1.51x); the binding heterogeneity is MEMORY (2.5x: 79.2/47.4/31.5 GB) and H2D PCIe bandwidth (2.15x: 57.5 vs ~26.6 GB/s). NB: RTX6000Ada is SLOWER than RTX5000Ada in fp32 matmul here -> 'bigger card' != faster; never assume, measure.",
+  "caveat": "Plain fp32 CUDA-core matmul understates H100's tensor-core (TF32/FP16/FP8) advantage; re-profile with the actual GNN kernels/precision before final claims.",
+  "devices": {
+    "H100-80GB":       {"mem_gb": 79.2, "gflops_fp32": 48322.5, "h2d_gbps": 57.5, "d2h_gbps": 55.3, "r_norm_fp32": 1.508, "gnn_step_ms": 5.11, "r_norm_gnn": 2.13},
+    "RTX6000Ada-48GB": {"mem_gb": 47.4, "gflops_fp32": 28910.7, "h2d_gbps": 26.7, "d2h_gbps": 26.3, "r_norm_fp32": 0.902, "gnn_step_ms": 7.42, "r_norm_gnn": 1.47},
+    "RTX5000Ada-32GB": {"mem_gb": 31.5, "gflops_fp32": 32038.7, "h2d_gbps": 26.6, "d2h_gbps": 26.3, "r_norm_fp32": 1.000, "gnn_step_ms": 10.9, "r_norm_gnn": 1.00}
+  },
+  "gnn_kernel_note": "r_norm_gnn from full-batch GraphSAGE (train_smoke, jobs 78674-76, askubuntu feat128 L2). hetcluster() now uses r_norm_gnn. The GNN kernel REVERSES fp32-matmul: RTX6000 faster than RTX5000 on real workload."
+}
