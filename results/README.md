@@ -9,5 +9,6 @@ paper Sec. 6). Selected mapping:
 - `cluster_archive/gpu_e2e_f1024.csv` -> feature-width-1024 frontier (E13)
 - `cluster_archive/gpu_e2e_exp3.csv`, `gpu_e2e_wmix.csv`, `gpu_e2e_prof.csv` -> axis regimes (Table: E14)
 - `gpu_e2e_polish.csv`, `gpu_e2e_pinned.csv` -> warm-start polish (Table: E15)
-- `tgn_linkpred_151415.csv` -> end-to-end link-prediction training (E17)
+- `tgn_all_151459.csv` -> end-to-end link-prediction training, all ten graphs (Table: E17)
+- `tgn_linkpred_151415.csv` -> earlier two-graph E17 pilot
 - `cluster_archive/gpu_e2e_rtx_6000.csv` etc. -> multi-GPU step measurements (E5, E16)
