@@ -1,0 +1,7 @@
+M,N,dataset,maxdiff,ours_ms,pyg_ms,ratio,status
+157474,9227,jodie-wikipedia,2.24e-05,0.13,1.62,12.028,OK
+506550,24818,mathoverflow,1.17e-05,0.34,4.86,14.48,OK
+964437,159316,askubuntu,1.95e-05,2.87,13.14,4.584,OK
+1443339,194085,superuser,3.17e-05,3.6,18.54,5.154,OK
+7833140,1140149,wiki-talk,4.40e-04,22.54,111.28,4.938,OK
+,,stackoverflow,,,,,FAIL:OutOfMemoryError:CUDA out of memory. Tried to allocate 61.80 GiB. GPU 0 has a total capacity of 31.50 GiB o
