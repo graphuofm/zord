@@ -8,6 +8,8 @@ paper Sec. 6). Selected mapping:
 - `disp_151530.csv` -> five repeated runs per E0 cell on three graphs (timing dispersion, E0)
 - `tgn_linkpred_151415.csv` -> earlier two-graph E0 pilot
 - `pygref_151532.csv` -> single-device reference check vs. PyG shipped operators (Sec. 5, Implementation)
+- `tgnmem_151537.csv` -> TGN-style memory-module training, seven graphs (E0, "The memory module")
+- `dglpart_151538.csv` -> DGL 1.1.3 shipped partition step vs. zord kernels, all ten graphs (E3)
 - `kmpb_151531.csv` -> KaMinPar vs. Metis vs. zord kernels, all ten graphs (E3)
 - `attr_partition_79134.csv` -> partitioning at scale (Table: E11)
 - `e12_mag_151416.csv` -> byte skew on ogbn-mag (Table: E12)
